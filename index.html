@@ -4,170 +4,249 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        :root{
-            --primary-color:#ca4361;
-        }
-        body{
-            font-family: "Inter", 'sans-serif';
-            max-width: 1440px;
-            margin: 0 auto;
-        }
-        nav{
-            display: flex;
-            justify-content: space-between;
-            padding: 40px;
-            padding-top: 60px;
-        }
-        header{
-            border: 1px solid green;
-        }
-        .link{
-            list-style-type: none;
-            display: flex;
-        }
-        .link a {
-            text-decoration: none;
-            color: black;
-            font-weight: 600;
-            font-size: 20px;
-            margin-right: 20px;
-        }
-        .link a:hover{
-            color: var(--primary-color);
-            transition: all;
-            transition-duration: 1s;
-        }
-        h1{
-            box-sizing: border-box;
-            padding: 10px;
-        }
-        .line{
-            border: 2px solid var(--primary-color);
-            width: 32px;
-            border-radius: 20px;
-            margin-top: 10px;
-            margin-left: 30px;
-        }
-        .buttons button{
-            font-size: 20px;
-            margin-left: 10px;
-            border-radius: 6px;
-            cursor: pointer;
-            height: 51px;
-            width: 145px;
-            transition: all;
-            transition-duration: 0.3s;
-        }
-        .filled{
-            background-color: var(--primary-color);
-            color: white;
-            border: 1px solid transparent;
-        }
-        .filled:hover{
-            background-color: white;
-            border-color: var(--primary-color);
-            color: var(--primary-color);
-        }
-        .outline{
-            background-color: white;
-            border: 1px solid var(--primary-color);
-            color: var(--primary-color);
-        }
-        .outline:hover{
-            background-color: var(--primary-color);
-            color: white;
-            border-color: transparent;
-        }
-        /* main section */
-        main{
-            padding: 30px 0px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-top: 100px;
-        }
-        .hero{
-            
-        }
-        .hero h1{
-            font-size: 55px;
-            font-weight: 600;
-            margin-right: 60px;
-            width: 446px;
-            max-width: 446px;
-        }
-        .hero span{
-            color: var(--primary-color);
-        }
-        .hero p{
-            font-size: 21px;
-            width: 370px;
-            color: rgba(151, 151, 151, 65);
-            margin-top: 22px;
-        }
-        .hero .cta{
-            width: 270px;
-            height: 65px;
-            background-color: var(--primary-color);
-            color: white;
-            font-size: 21px;
-            border: 1px solid transparent;
-            border-radius: 6px;
-            margin-top: 40px;
-            transition: all;
-            transition-duration: 4s;
-            cursor: pointer;
-        }
-        .cta:hover{
-            background-color: white;
-            border-color: var(--primary-color);
-            color: var(--primary-color);
-        }
-    </style>
+    <link rel="stylesheet" href="./style.css">
+    <title>My Website</title>
 </head>
 <body>
-    <header>
-        <!-- Navbar -->
-        <nav>
-            <!-- links -->
-            <ul class="link">
-                <li>
-                    <a href="#">About Me</a>
-                    <div class="line"></div>
-                </li>
-                
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Company</a></li>
-            </ul>
-            <!-- buttons -->
-            <div class="buttons">
-                <button class="filled">SignUP</button>
-                <button class="outline">LogIN</button>
-
+    <!-- Header sectin -->
+    <section id="header">
+        <div class="header container"> 
+            <div class="nav-bar">
+                <div class="brand">
+                    <a href="#hero"><h1><span>M</span>ohsin <span>M</span>unir</h1></a>
+                </div>
+                <div class="nav-list">
+                    <div class="hamburger">
+                        <div class="bar"></div>
+                    </div>
+                            <ul>
+                                <li><a href="#hero" data-after="Home">Home</a></li>
+                                <li><a href="#services" data-after="Services">Services</a></li>
+                                <li><a href="#projects" data-after="Projects">Projects</a></li>
+                                <li><a href="#about" data-after="About">About</a></li>
+                                <li><a href="#contact" data-after="Contact">Contact</a></li>
+                            </ul>
+                </div>
             </div>
-        </nav>
-        <!-- Navbar -->
-    </header>
-    <!-- main -->
-    <main>
+        </div>
+    </section>
+    <!-- End Header section -->
         <!-- Hero section -->
-        <section class="hero">
-            <h1>I am a Full Stack <span>web application</span> developer</h1>
-            <p>I bring your ideas to life using my top-notch skills and more than 2 years of experience!</p>
-            <button class="cta">Hire Me</button>
+        <section id="hero">
+            <div class="hero container">
+                <div>
+                    <h1>Hello,<span></span></h1>
+                    <h1>My Name is <span></span></h1>
+                    <h1>Mohsin <span></span></h1>
+                    <a href="#" type="button" class="cta">Portfolio</a>
+
+                </div>
+            </div>
         </section>
-        <!-- Illustration section -->
-        <section class="illustration">
-            <img src="./assets/illustration.svg" alt="user image" />
+        <!-- End of Hero section -->
+        <!-- Service section -->
+        <section id="services">
+            <div class="service container">
+                <div class="service-top">
+                    <h1 class="section-title">Serv<span>i</span>ces</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur cupiditate tempora error, deleniti qui at, quod quia ut mollitia amet natus excepturi totam a provident eaque, id sunt cumque perspiciatis.</p>
+
+                </div>
+                <div class="service-bottom">
+                    <!-- first card -->
+                    <div class="service-item">
+                        <div class="icon">
+                            <img src="/img/icons8-home-page-50.png" alt="home image" />
+                        </div>
+                            <div> 
+                                <h2>Web Design</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet dolor ex culpa ea quasi! Sed sequi harum ad adipisci perferendis. Quidem magni, veritatis ex sunt eius tenetur esse natus dolorem.</p>
+                            </div>
+                        
+                    </div>
+                    <!-- second card -->
+                    <div class="service-item">
+                        <div class="icon">
+                            <img src="/img/icons8-home-page-50.png" alt="home image" />
+                        </div>
+                            <div>
+                                <h2>Web Design</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet dolor ex culpa ea quasi! Sed sequi harum ad adipisci perferendis. Quidem magni, veritatis ex sunt eius tenetur esse natus dolorem.</p>
+                            </div>
+                    </div>
+                    <!-- third card -->
+                    <div class="service-item">
+                        <div class="icon">
+                            <img src="/img/icons8-home-page-50.png" alt="home image" />
+                        </div>
+                            <div>
+                                <h2>Web Design</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet dolor ex culpa ea quasi! Sed sequi harum ad adipisci perferendis. Quidem magni, veritatis ex sunt eius tenetur esse natus dolorem.</p>
+                            </div>
+                    </div>
+                    <!-- fourth card -->
+                    <div class="service-item">
+                        <div class="icon">
+                            <img src="/img/icons8-home-page-50.png" alt="home image" />
+                        </div>
+                            <div>
+                                <h2>Web Design</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet dolor ex culpa ea quasi! Sed sequi harum ad adipisci perferendis. Quidem magni, veritatis ex sunt eius tenetur esse natus dolorem.</p>
+                            </div>
+                    </div>
+                </div>
+            </div>
         </section>
-    </main>
-    
+        <!-- End Service section -->
+        <!-- Project section -->
+        <section id="projects">
+            <div class="projects container">
+                <div class="projects-header">
+                    <h1 class="section-title">Recents <span>projects</span></h1>
+                </div>
+                <div class="all-projects">
+                    <!-- project 1 -->
+                    <div class="project-item">
+                        <div class="project-info">
+                            <h1>Project 1</h1>
+                            <h1>Coding is Love</h1>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam similique reiciendis numquam commodi ullam earum eligendi repellendus ipsam laborum, quis nostrum nemo. Voluptatem sit non perferendis. Saepe autem nobis eius.</p>
+                        </div>
+                        <div class="project-img">
+                            <img src="./img/service.png" alt="project image">
+                        </div>
+                    </div>
+                    <!-- project 2 -->
+                    <div class="project-item">
+                        <div class="project-info">
+                            <h1>Project 2</h1>
+                            <h1>Coding is Love</h1>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam similique reiciendis numquam commodi ullam earum eligendi repellendus ipsam laborum, quis nostrum nemo. Voluptatem sit non perferendis. Saepe autem nobis eius.</p>
+                        </div>
+                        <div class="project-img">
+                            <img src="./img/service.png" alt="project image">
+                        </div>
+                    </div>
+                    <!-- project 3 -->
+                    <div class="project-item">
+                        <div class="project-info">
+                            <h1>Project 3</h1>
+                            <h1>Coding is Love</h1>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam similique reiciendis numquam commodi ullam earum eligendi repellendus ipsam laborum, quis nostrum nemo. Voluptatem sit non perferendis. Saepe autem nobis eius.</p>
+                        </div>
+                        <div class="project-img">
+                            <img src="./img/service.png" alt="project image">
+                        </div>
+                    </div>
+                    <!-- project 4 -->
+                    <div class="project-item">
+                        <div class="project-info">
+                            <h1>Project 4</h1>
+                            <h1>Coding is Love</h1>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam similique reiciendis numquam commodi ullam earum eligendi repellendus ipsam laborum, quis nostrum nemo. Voluptatem sit non perferendis. Saepe autem nobis eius.</p>
+                        </div>
+                        <div class="project-img">
+                            <img src="./img/service.png" alt="project image">
+                        </div>
+                    </div>
+                    <!-- project 5 -->
+                    <div class="project-item">
+                        <div class="project-info">
+                            <h1>Project 5</h1>
+                            <h1>Coding is Love</h1>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam similique reiciendis numquam commodi ullam earum eligendi repellendus ipsam laborum, quis nostrum nemo. Voluptatem sit non perferendis. Saepe autem nobis eius.</p>
+                        </div>
+                        <div class="project-img">
+                            <img src="./img/service.png" alt="project image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Project section -->
+        <!-- About section -->
+        <section id="about">
+            <div class="about container">
+                <div class="col-left">
+                    <div class="about-img">
+                        <img src="./img/hero-bg.png" alt="about image" />
+                    </div>
+                </div>
+                <div class="col-right">
+                    <h1 class="section-title">About <span>me</span></h1>
+                    <h2>Front End Developer</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero non earum reprehenderit fugit consequuntur in doloremque praesentium. Rerum, corporis repellat aliquid tenetur autem doloribus quidem aperiam, ducimus eos veritatis dolorem.</p>
+                    <a href="#" class="cta">Download Resume</a>
+                </div>
+            </div>
+        </section>
+        <!-- End About section -->
+        <!-- Contact section -->
+        <section id="contact">
+            <div class="contact container">
+                <div><h1 class="section-title">Contact <span>Info</span></h1></div>
+                <div class="contact-items">
+                    <!-- contact item -->
+                    <div class="contact-item">
+                        <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png" alt="phone png"></div>
+                        <div class="contact-info">
+                            <h1>Phone</h1>
+                            <h2>+92123456789</h2>
+                            <h2>+92123456789</h2>
+                        </div>
+                    </div>
+                    <!-- email item -->
+                    <div class="contact-item">
+                        <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png" alt="phone png"></div>
+                        <div class="contact-info">
+                            <h1>Email</h1>
+                            <h2>info@gmail.com</h2>
+                            <h2>info@gmail.com</h2>
+                        </div>
+                    </div>
+                    <!-- Address item -->
+                    <div class="contact-item">
+                        <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png" alt="phone png"></div>
+                        <div class="contact-info">
+                            <h1>Adress</h1>
+                            <h2>Fatikchari, Chittagong, Bangladesh</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Contact section -->
+        <!-- Footer section -->
+        <section id="footer">
+            <div class="brand">
+                <h1><span>M</span>ohsin <span>M</span>unir</h1>
+                <h2>Your complete web solution</h2>
+                <div class="social-icon">
+                    <!-- facebook -->
+                    <div class="social-item">
+                        <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png" alt="phone png" /></a>
+                    </div>
+                    <!-- instagram -->
+                    <div class="social-item">
+                        <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/instagram-new.png" alt="phone png" /></a>
+                    </div>
+                    <!-- twitter -->
+                    <div class="social-item">
+                        <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/twitter.png" alt="phone png" /></a>
+                    </div>
+                    <!-- behance -->
+                    <div class="social-item">
+                        <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/behance.png" alt="phone png" /></a>
+                    </div>
+                </div>
+                <p>Copyright &copy; 2023 Mohsin. All rights reserved</p>
+            </div>
+        </section>
+        <!-- End Footer section -->
+
+
+
+
+        <script src="./app.js"></script>
 </body>
 </html>
